@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y \
     libjpeg62-dev \
     git \
     libxslt-dev \
+    libsqlite3-dev \
     libz-dev \
     && rm -rf /var/lib/apt/lists/* \
     && git clone https://github.com/pyenv/pyenv $PYENV_ROOT --branch v1.2.18 --depth 1 \
